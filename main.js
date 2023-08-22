@@ -6,6 +6,9 @@ let searchQuery = "";
 const APP_ID = "f557cca5";
 const APP_key = "e45177bc7105ae4cccbbfc0ed14556f5";
 
+v=window.localStorage.getItem("myemail")
+document.getElementById('myemail').innerHTML=v
+
 // Fetch initial recipes when the page loads
 window.addEventListener("load", () => {
     fetchInitialRecipes();
